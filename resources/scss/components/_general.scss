@@ -1,0 +1,38 @@
+html, body, #app {
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+* {
+
+  &, &::before, &::after {
+
+    box-sizing: border-box;
+
+  }
+
+}
+
+body {
+
+  font-family: 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 100%;
+  background-color: $body-bg;
+
+  &, a {
+
+    color: $body-color;
+
+  }
+
+  a {
+
+    text-decoration: none;
+
+  }
+
+}

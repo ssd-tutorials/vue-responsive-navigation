@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Vue Navigation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+
+        <div id="navigation-wrapper">
+
+            <navigation inline-template>
+
+                <nav class="navigation" :class="expandedClass">
+
+                    <navigation-handler :telephone="'0800 800 800'"></navigation-handler>
+
+                    <ul>
+
+                        <drop-down-wrapper
+                            :id="1"
+                            :label="'About us'"
+                            :is-opened="isOpened(1)"
+                        >
+                            <li>
+                                <a href="#">History</a>
+                            </li>
+                            <li>
+                                <a href="#">Meet the team</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonials</a>
+                            </li>
+                        </drop-down-wrapper>
+
+                        <drop-down-wrapper
+                            :id="2"
+                            :label="'Services'"
+                            :is-opened="isOpened(2)"
+                        >
+                            <li>
+                                <a href="#">Service type one</a>
+                            </li>
+                            <li>
+                                <a href="#">Service type two</a>
+                            </li>
+                        </drop-down-wrapper>
+
+                        <drop-down-wrapper
+                            :id="3"
+                            :label="'Products'"
+                            :is-opened="isOpened(3)"
+                        >
+                            <li>
+                                <a href="#">Product number one</a>
+                            </li>
+                            <li>
+                                <a href="#">Product number two</a>
+                            </li>
+                        </drop-down-wrapper>
+
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </navigation>
+
+        </div>
+
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
