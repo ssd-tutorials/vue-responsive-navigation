@@ -1,6 +1,6 @@
 <template>
     <div class="handlers">
-        <a :href="telephoneAttribute"><span class="fa fa-phone"></span> 0800 800 800</a>
+        <a :href="telephoneAttribute"><span class="fa fa-phone"></span> {{ telephone }}</a>
         <span class="trigger" @click.prevent="expand()"><span class="fa fa-bars"></span></span>
     </div>
 </template>
